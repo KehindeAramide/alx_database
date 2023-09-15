@@ -1,6 +1,9 @@
 -- creates the MySQL server user user_0d_1.
-CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
--- Grant priviledges
-GRANT ALL PRIVILEGES ON * . * TO 'user_0d_1'@'localhost';
--- Flush priviledges to apply changes
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost';
+-- List privileges for user_0d_1
+GRANT ALL PRIVILEGES ON * . * 'user_0d_1'@'localhost';
+-- flush priviledges
 FLUSH PRIVILEGES;
+-- Set password for 'user_0d_1'@'localhost';
+SET PASSWORD FOR 'user_0d_1'@'localhost' = "user_0d_1_pwd";
+
