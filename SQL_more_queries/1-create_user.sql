@@ -1,5 +1,5 @@
 -- creates the MySQL server user user_0d_1.
-
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost'
 -- List privileges for user_0d_1
 SHOW GRANTS FOR 'user_0d_1'@'localhost';
 -- Set password for 'user_0d_1'@'localhost';
